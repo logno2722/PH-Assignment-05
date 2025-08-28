@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 /* all font */
 
 .roboto-normal {
@@ -130,7 +133,7 @@ nav {
 /* banner */
 
 .esd {
-    width: 1920px;
+    width: 100%;
     height: 239px;
     background-image: linear-gradient(to right, #013223 0%, #006747 50%, #013223 100%);
     display: flex;
@@ -162,10 +165,10 @@ nav {
 .product_container {
     display: grid;
     grid-template-columns: repeat(12, 1fr); 
-    gap: 30px; 
+    gap: 2px; 
     width: 100%;
     margin: 48px 58px 86px 58px;
-    max-width: 1800px;
+    max-width: 100%;
 }
 
 /* Left side box */
@@ -277,7 +280,6 @@ nav {
 
 .call_history_box {
     grid-column: span 3; 
-    padding: 20px; 
     background-color: white;
     padding: 20px;
 }
@@ -285,7 +287,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    width: 362px;
 }
 .clear_button{
     color: white;
@@ -297,4 +299,119 @@ nav {
     border: none;
     border-radius: 50px;
     padding: 14px 36px;
+    
+}
+
+@media only screen and (max-width: 393px) {
+
+    /* Header & Navigation */
+    .emergency_service {
+        margin-left: 10px;
+        gap: 5px;
+    }
+
+    .r_nav {
+        margin-right: 10px;
+        gap: 5px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heart,
+    .coin {
+        padding: 5px 10px;
+        width: auto;
+        height: auto;
+    }
+
+    .btn_primary {
+        width: 80px;
+        height: 35px;
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    /* Banner Section */
+    .esd {
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .esd_img {
+        width: 70px;
+        height: 70px;
+        margin-top: 0;
+        margin-bottom: 10px;
+       
+    }
+
+    .esd_title {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .esd_description {
+        font-size: 15px;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+
+    /* products */
+    .product_container {
+        grid-template-columns: 1fr;
+        margin: 20px 10px 40px 10px;
+        gap: 20px;
+        
+    }
+
+    .product_box {
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        
+    }
+
+    /* Cards */
+    .card {
+        padding: 20px;
+        
+    }
+
+   
+    .number_title {
+        font-size: 20px;
+    }
+
+    .number {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+
+    .pair_btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Call History Section */
+    .call_history_box {
+        grid-column: span 1;
+        padding: 10px;
+    }
+
+    .history_box_header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
 }
