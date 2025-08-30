@@ -10,7 +10,7 @@ Answer:
 By creating element we make a new HTML tag using JavaScript. It exists in memory but is not yet visible in the webpage until we want.  
 For example:  
 >let newElement = document.createElement("p");  
->newElement.textContent = "Programming Hero";  
+>newElement.textContent = "Programming Hero";
 By inserting an element we placed the created element into the actual HTML document which makes it visible on the page as part of the DOM tree.  
 For example:  
 >let c = document.getElementById("container");  
