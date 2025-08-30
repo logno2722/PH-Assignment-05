@@ -313,6 +313,7 @@ nav {
     width: 100%;
     gap: 16px;
     font-size: 18px;
+    padding: 16px;
 
 }
 .history_entry h6{
