@@ -276,6 +276,11 @@ nav {
     align-items: center;
     gap: 8px;
 }
+.call_history_box h3{
+    font-size: 20px;
+    font-weight: 500px;
+    color: #111111;
+}
 
 .call_history_box {
     grid-column: span 3; 
@@ -305,8 +310,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 352px;
-    height: 86px;
+    width: 100%;
     gap: 16px;
     font-size: 18px;
 
@@ -317,11 +321,6 @@ nav {
     margin-top: 4px;
 }
 
-.call_time{
-    width: 92px;
-    height: 25px;
-    margin: 0px 0px 0px 16px; 
-}
 @media only screen and (max-width: 393px) {
 
     /* Header & Navigation */
