@@ -19,7 +19,7 @@ Answer:
 ### 3. What is Event Bubbling and how does it work?  
 Answer:  
 >Event bubbling is a process in JavaScript where an event starts from the target (child) element and then bubbles up to its parent, grandparent and so on.  
->For example, if we click a <button> inside a <div> both the button's and the div's event listeners can be triggered. It allows parent elements to handle events >from their children.   
+>For example, if we click a "button" inside a "div" both the button's and the div's event listeners can be triggered. It allows parent elements to handle events >from their children.   
 
 ### 4. What is Event Delegation in JavaScript? Why is it useful?  
 Answer:  
